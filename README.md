@@ -15,9 +15,9 @@ $appid = '';
 $appSecret = '';
 $app = new system\WxLogin($appid , $appSecret);
 if (isset($_GET['code']) && $_GET['state']){
-	$user = $app->getUserInfo($_GET['code']);
-	if (!$user) exit($app->getError());
-	var_dump($user);
+    $user = $app->getUserInfo($_GET['code']);
+    if (!$user) exit($app->getError());
+    var_dump($user);
     exit();
 }
 echo $app->auth();
