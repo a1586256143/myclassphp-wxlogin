@@ -43,7 +43,7 @@ class WxLogin {
 	/**
 	 * 设置回调地址
 	 * @param $callback
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午4:15
 	 */
 	public function setCallbackUri($callback){
@@ -55,7 +55,7 @@ class WxLogin {
 	/**
 	 * 设置授权方式
 	 * @param $scope
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午4:15
 	 */
 	public function setScopes($scope){
@@ -66,7 +66,7 @@ class WxLogin {
 
 	/**
 	 * 发起授权请求
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午3:24
 	 */
 	public function auth(){
@@ -80,7 +80,7 @@ class WxLogin {
 	 * 用code换openid
 	 * @param string $code
 	 * @return mixed
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午3:48
 	 */
 	public function codeToOpenid($code = ''){
@@ -94,7 +94,7 @@ class WxLogin {
 	 * 获取授权的用户信息
 	 * @param string $openid
 	 * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Overtrue\Socialite\User|\Psr\Http\Message\ResponseInterface|string
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午3:50
 	 */
 	public function getUser($openid = ''){
@@ -111,7 +111,7 @@ class WxLogin {
 	 * @param string $code
 	 * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Overtrue\Socialite\User|\Psr\Http\Message\ResponseInterface|string
 	 * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午3:52
 	 */
 	public function getUserInfo($code = ''){
@@ -126,7 +126,7 @@ class WxLogin {
 	/**
 	 * 获取AccessToken
 	 * @return string
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午3:12
 	 */
 	public function getAccessToken(){
@@ -139,7 +139,7 @@ class WxLogin {
 	/**
 	 * 获取App
 	 * @return \EasyWeChat\OfficialAccount\Application|string
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午3:17
 	 */
 	protected function getEasyWeChatApp(){
@@ -152,7 +152,7 @@ class WxLogin {
 	/**
 	 * 获取配置信息
 	 * @return array
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午3:15
 	 */
 	protected function getEasyWeChatConfig(){
@@ -175,7 +175,7 @@ class WxLogin {
 	/**
 	 * 获取错误信息
 	 * @return string
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午4:07
 	 */
 	public function getError(){
@@ -184,7 +184,7 @@ class WxLogin {
 
 	/**
 	 * 校验Appid和AppSecret
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午3:12
 	 */
 	protected function argsCheck(){
@@ -201,7 +201,7 @@ class WxLogin {
 	 * @param \Closure $callback
 	 * @param string $default
 	 * @return mixed|string
-	 * @author Colin <xiongxinsheng@yikaosheng.com>
+	 * @author Colin <amcolin@126.com>
 	 * @date 2021-07-07 下午4:10
 	 */
 	protected function runApi(\Closure $callback , $default = ''){
